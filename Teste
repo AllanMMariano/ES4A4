@@ -1,0 +1,37 @@
+import org.junit.Assert;
+import org.junit.Test;
+
+public class Teste {
+	@Test
+    public void testSoma2() {
+        int b;
+        b = Calc.som(150,50);
+        Assert.assertTrue(b==200);
+    }
+
+ @Test
+    public void testSub() {
+        int b;
+        b = Calc.sub(100, 50);
+        Assert.assertTrue(b==50);
+    }
+
+ @Test
+    public void testDiv() {
+        int b;
+        b = Calc.mult(1, 2);
+        Assert.assertTrue(b==2);
+    }
+ @Test
+    public void testMulti() {
+        int b;
+        b = Calc.mult(1, 1);
+        Assert.assertTrue(b==1);
+    }
+ @Test
+    public void testSoma3() {
+        int b;
+        b = Calc.som(150,50);
+        Assert.assertTrue(b!=2000);
+    }
+}
